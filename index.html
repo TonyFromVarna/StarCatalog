@@ -1,0 +1,125 @@
+<HTML>
+
+<HEAD>
+    <TITLE>Washington Double Star Catalogs</TITLE>
+    <META NAME="description" content="VizieR Connection (astronomical catalogues from CDS) V4.42">
+</HEAD>
+
+<BODY TEXT="#000000" BGCOLOR="#EEEEDD" LINK="#000000" topMargin=30 MARGINHEIGHT=30 VLINK="#770000" ALINK="#FF0000" BACKGROUND="starbd.gif">
+
+    <TABLE class="bigtable" cellspacing="40" cellpadding="1" align="center">
+        <TR<TD>
+            < <TABLE BGCOLOR=#FFFFEE WIDTH=80% align="center" BORDER=10 CELLPADDING=30>
+                <TR>
+                    <TD>
+                        <H1 ALIGN=CENTER>
+                            <FONT COLOR="#160c5c">Double Star Catalog</H1>
+                        <P>
+                            It's a pair of stars in orbit around a common centre of gravity under their mutual gravitational attraction. The individual stars in the system are called components: component A is the primary or the brightest and component B is the secondary or the
+                            faintest (in general). There are several types of binaries according to the techique of detection used.</P>
+
+                        <H3>
+                            <I><FONT COLOR="#160c5c"> <A NAME="Visual">Visual Double Stars</A></FONT></I>
+                        </H3>
+                        <P>
+                            <IMG ALIGN="RIGHT" SRC="hip71683.gif" ALT="orbit"> The two components can be resolved visually through a telescope. Such systems have mostly been investigated for astrometric purposes: highly accurate measurements of the position of the star on the celestial sphere are obtained
+                            in order to gain knowledge of the orbit characteristics as well as visual estimates of the difference of magnitude (measure of the brightness) between the two components. In more recent times, observers used photometric techniques
+                            to get high precision measurements of the global magnitude and colours of these systems.</P>
+                        <BR>
+
+                        <H3>
+                            <I><FONT COLOR="#160c5c"> <A NAME="Astrometric">Astrometric</A> Double Star</FONT></I>
+                        </H3>
+                        <P>
+                            <IMG ALIGN="RIGHT" SRC="hip87895.gif" ALT="position of the photocenter"> These are apparently single stars. In this case the binarity is revealed by perturbations of the position with respect to the "background" or "reference stars". These systems are studied by photographic means: measurements
+                            show the motion of the photocentre (this is the weighted centre of the light intensity of the two components). From such a study we can obtain e.g. the luminosity, the semi-major axis of the astrometric orbit, the position
+                            of the center of mass of the system.
+                            <BR>
+                            <BR>
+                        </P>
+
+                        <H3>
+                            <I><FONT COLOR="#160c5c"><A NAME="Spectroscopic">Spectroscopic</A> Double Stars</FONT></I>
+                        </H3>
+                        <P>
+                            <IMG SRC="hip24608.gif" ALIGN="RIGHT" ALT="Spectroscopic Orbit"> Systems where the components are too close to each other to be resolved as separate stars, are studied by spectroscopy (study of the stellar atmospheres, radial velocity measurements via the Doppler effect).The study of their
+                            spectra shows periodic shifts due to the orbital motion around a mean velocity which is the motion in the radial direction of the system as a whole. We thus can obtain the spectroscopic orbit. It gives us the orbital period,
+                            information on the orbit itself such as the eccentricity and very useful, the mass ratio of the system. For example, the left figure illustrates the radial velocity curves for alpha Aurigae A and B.
+                        </P>
+                        <BR>
+
+                        <H3>
+                            <I><FONT COLOR="#160c5c" BGCOLOR="#"> <A NAME="Eclipsing">Eclipsing</A> Double stars</FONT></I>
+                        </H3>
+                        <IMG ALIGN="RIGHT" SRC="hip31173.gif" ALT="Light Curve"> When the orbit is aligned with respect to Earth, one component may occult the other one. These "eclipses" are seen as periodic perturbations (drops) on the light curve (luminosity as a function of time, e.g. HIC 31173 see figure).
+                        These double stars are called eclipsing binaries. From the study of their light curves, we have access to the period, the inclination, the luminosity ratio and the radii of the stars.
+                        </P>
+                        <BR>
+                        <BR>
+                        <BR>
+
+
+                        <P>
+                            <A HREF="Sirius.gif">
+                                <IMG ALIGN=RIGHT SRC="Sirius2.gif" HSPACE=20 BORDER=1>
+                            </A>
+                            <LI><u><B><FONT COLOR="#160c5c">Washington Double Star 
+	Catalog (WDS)</u></B>
+                                </A>
+                                </FONT> is maintained by the USNO is the world's principal database of astrometric double and multiple star data. The WDS Catalog contains positions (J2000), discoverer designations, epochs, position angles, separations, magnitudes,
+                                spectral types, proper motions, and, when available, Durchmusterung numbers and Notes for the components of 83,211 systems.
+
+
+
+                                <tr>
+                                    <td class="pagingRow">
+                                        <FORM action="star_q.php" method="post">
+                                            <LI><u><B><FONT COLOR="#160c5c" ALIGN=CENTER>Enter data:</u></B><br>
+                                                <UL>
+                                                    <b><u>Center point coordinates and search field size:</u></b><br><br>
+                                                    <LI>Right ascension in J2000
+                                                        <input type=text name="ra_c1" value="" size="3" maxlength="3"> hours
+                                                        <input type=text name="ra_c2" value="" size="5" maxlength="5"> minutes
+                                                        <LI>Declination in J2000
+                                                            <input type=text name="de_c1" value="" size="3" maxlength="3"> degrees
+                                                            <input type=text name="de_c2" value="" size="5" maxlength="5"> minutes
+                                                            <br><br>
+                                                            <LI>Size of square field (<i>in arcmin</i>):
+                                                                <input type=text name="d" value="60.0" size="5" maxlength="5">
+                                                                <br><br>
+                                                                <b><u>Aditional limiations:</u></b><br><br>
+                                                                <LI>
+                                                                    <input type=checkbox name="use_sp" ALIGN=CENTER value="true"> Sp
+                                                                    <input type=text name="sp" value="" size="9" maxlength="10"> Spectral class
+                                                                    <br>
+                                                                    <br>
+                                                                    <LI>
+                                                                        <input type=checkbox name="use_min" ALIGN=CENTER value="true"> Star magnitude min:
+                                                                        <input type="Text" name="m_min" value="" size="5" maxlength="5">
+                                                                        <br>
+                                                                        <LI>
+                                                                            <input type=checkbox name="use_max" ALIGN=CENTER value="true">Star magnitude max:
+                                                                            <input type="Text" name="m_max" value="" size="5" maxlength="5">
+                                                </UL>
+                                                Sort your output by: <select name="order">
+	<option value="ra">Right Ascension</option>
+	<option value="de">Declination</option>
+	<option value="dist">Distance to field center</option>
+	<option value="mag1">Brightest first component star M1</option>
+	</select>
+                                                <br><br>
+                                                <input type="Submit" name="submit" value="Submit Query">
+                                                <input type="reset" name="clear_form" value="Clear">
+                                        </FORM>
+                                    </td>
+
+                    </TD>
+                    </tr>
+    </TABLE>
+
+    </TD>
+    </TR>
+    </TABLE>
+</BODY>
+
+</HTML>
